@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.capg.dao.IProductDao;
 import com.capg.entities.Product;
 @Service
+@Transactional
 public class ProductServiceImpl implements IProductService{
 	
 	
