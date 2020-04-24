@@ -1,13 +1,15 @@
 package org.cap.service;
 
 import java.util.List;
+
 import java.util.Map;
 
 import javax.transaction.Transactional;
 
 import org.cap.dao.ITraineeDao;
+import org.cap.entities.Admin;
 import org.cap.entities.Trainee;
-import org.cap.entities.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Transactional
@@ -49,8 +51,8 @@ public class TraineeServiceImpl implements ITraineeService {
 	}
 	
 	@Override
-	public User findId(int id) {
-		User user1 = traineeDao.findId(id);
-		return user1;
+	public Admin findId(int id) {
+		Admin admin1 = traineeDao.findId(id);
+		return admin1;
 	}
 }

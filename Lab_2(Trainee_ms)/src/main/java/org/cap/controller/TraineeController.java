@@ -1,11 +1,11 @@
 package org.cap.controller;
 
 import java.util.HashMap;
+
 import java.util.List;
 
 import org.cap.entities.Admin;
 import org.cap.entities.Trainee;
-import org.cap.entities.User;
 import org.cap.service.ITraineeService;
 import org.cap.util.SessionDetails;
 import org.springframework.beans.factory.annotation.Autowired;
