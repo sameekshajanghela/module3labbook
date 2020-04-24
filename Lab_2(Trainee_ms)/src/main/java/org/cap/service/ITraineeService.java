@@ -12,6 +12,5 @@ public interface ITraineeService {
 	Trainee modify(Trainee trainee);
 	Trainee retrieve (int traineeId);
 	List<Trainee> fetchall();
-	boolean credentialsCorrect(int id, String password);
 	User findId(int id);
 }

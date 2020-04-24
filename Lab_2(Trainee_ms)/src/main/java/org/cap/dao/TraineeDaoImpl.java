@@ -62,20 +62,7 @@ public class TraineeDaoImpl implements ITraineeDao {
 		return store;
 	}
 	
-	@Override
-    public boolean credentialsCorrect(int id, String password) {
-		  User user = new User(2,"Sameeksha");
-		  user = getEntityManager().merge(user);
-        if (password == null || password.isEmpty()) {
-            return false;
-        }
-        User user1 = entityManager.find(User.class, id);
-        if (user1 == null) {
-            return false;
-        }
-        return user1.getPassword().equals(password);
-		
-    }
+	
 
 
 	@Override

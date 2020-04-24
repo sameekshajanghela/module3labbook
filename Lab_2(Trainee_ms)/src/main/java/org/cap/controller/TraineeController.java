@@ -2,6 +2,8 @@ package org.cap.controller;
 
 import java.util.HashMap;
 import java.util.List;
+
+import org.cap.entities.Admin;
 import org.cap.entities.Trainee;
 import org.cap.entities.User;
 import org.cap.service.ITraineeService;
@@ -30,6 +32,23 @@ public class TraineeController {
 	}
 	@Autowired
 	private SessionDetails sessionDetails;
+	
+	
+	@Autowired
+	private Admin admin;
+	
+	public boolean credentialsCorrect(int id, String password ) {
+		boolean flag=true;
+		if(password == null || password.isEmpty()) {
+			return false;
+		}
+		if(id==admin.getId()&&password.equals(admin.getPassword())) {
+			flag=true;
+		}
+		return flag;
+	}
+	
+	
 	
 	 @GetMapping("/")
 	    public ModelAndView homePage() {
@@ -164,14 +183,14 @@ public class TraineeController {
 	    public ModelAndView login(@RequestParam("userid")int id , @RequestParam("userpassword") String password)
 	    {
 	        //check id and password is correct
-	    	User user1 = new User(id,password);
-	        boolean correct=traineeService.credentialsCorrect(user1.getId(),user1.getPassword());
+	    	
+	        boolean correct=credentialsCorrect(id,password);
 	        if(!correct){
 	         return new ModelAndView("/login");
 	        }
 	        sessionDetails.setId(1);
-	       User user=traineeService.findId(id);
-	        ModelAndView modelAndView= new ModelAndView("operations",  "user", user);
+	       
+	        ModelAndView modelAndView= new ModelAndView("operations");
 	        return modelAndView;
 	    }
 	    

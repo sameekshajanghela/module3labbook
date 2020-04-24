@@ -1,0 +1,11 @@
+2020-04-24 17:24:06 DEBUG AnnotationConfigApplicationContext:594 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a396c1e
+2020-04-24 17:24:06 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-04-24 17:24:07 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-04-24 17:24:07 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-04-24 17:24:07 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-04-24 17:24:07 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-04-24 17:24:07 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'javaConfig'
+2020-04-24 17:24:07 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sbu'
+2020-04-24 17:24:07 DEBUG PropertySourcesPropertyResolver:115 - Found key 'sbuId' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-24 17:24:07 DEBUG PropertySourcesPropertyResolver:115 - Found key 'sbuName' in PropertySource 'class path resource [employee.properties]' with value of type String
+2020-04-24 17:24:07 DEBUG PropertySourcesPropertyResolver:115 - Found key 'sbuHead' in PropertySource 'class path resource [employee.properties]' with value of type String
